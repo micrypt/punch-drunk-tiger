@@ -18,9 +18,9 @@ import (
 Use as expected.
 
 ```
-    mux.Handle(
+mux.Handle(
             "GET",
             "/api/find/{username}",
             tt.Timed(pdt.Marshaled(forwardGet), "GET-call", nil),
-    )
+            )
 ```
